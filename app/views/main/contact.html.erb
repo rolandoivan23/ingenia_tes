@@ -52,36 +52,41 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <form class="theme-form">
+                        <%= form_for(ContactForm.new, html: {class:'theme-form'}) do |form| %>
                     <div class="form-row">
-                        <div class="col-md-6">
-                            <label for="name">First Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter Your name"
-                                required="">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="email">Last Name</label>
-                            <input type="text" class="form-control" id="last-name" placeholder="Email" required="">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="review">Phone number</label>
-                            <input type="text" class="form-control" id="review" placeholder="Enter your number"
-                                required="">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="email">Email</label>
-                            <input type="text" class="form-control" id="email" placeholder="Email" required="">
-                        </div>
-                        <div class="col-md-12">
-                            <label for="review">Write Your Message</label>
-                            <textarea class="form-control" placeholder="Write Your Message"
-                                id="exampleFormControlTextarea1" rows="6"></textarea>
-                        </div>
-                        <div class="col-md-12">
-                            <button class="btn btn-solid" type="submit">Send Your Message</button>
-                        </div>
+                            <div class="col-md-6">
+                                <%= form.label :first_name %>
+                                <%= form.text_field :first_name, class:"form-control", id:"name", placeholder:"Enter Your name", required:"" %>
+                            </div>
+                            <div class="col-md-6">
+                                <%= form.label :last_name %>
+                                <%= form.text_field :last_name, class:"form-control", id:"last-name", placeholder:"Email", required:"" %>
+                            </div>
+                            <div class="col-md-6">
+                                <%= form.label :phone_number %>
+                                <%= form.text_field :phone_number,class:"form-control", id:"email", placeholder:"Email", required:"" %>
+                            </div>
+                            <div class="col-md-6">
+                                <%= form.label :email %>
+                                <%= form.text_field :email, class:"form-control", id:"email" ,placeholder:"Email", required:"" %>
+                            </div>
+                            <div class="col-md-12">
+                                <%= form.label :message %>
+                                <%= form.text_area :message, class:"form-control", placeholder:"Write Your Message",
+                                    id:"exampleFormControlTextarea1", rows:"6" %>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                  <div class="actions">
+                                    <%= form.submit 'Send Your Message', class: 'btn btn-solid' %>
+                                  </div>
+                            </div>
+
+
+
                     </div>
-                </form>
+                <% end %>
             </div>
         </div>
     </div>

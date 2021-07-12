@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :contact_forms
   resources :product_discount_packages
   resources :products
   resources :product_types
