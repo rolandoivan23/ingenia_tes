@@ -1,0 +1,12 @@
+//= require jquery-3.3.1.min.js
+//= require jquery-ui.min.js
+//= require jquery.exitintent.js
+//= require exit.js
+//= require popper.min.js
+//= require slick.js
+//= require menu.js
+//= require lazysizes.min.js
+//= require bootstrap.js
+//= require bootstrap-notify.min.js
+//= require fly-cart.js
+//= require script.js
