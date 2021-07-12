@@ -1,0 +1,1 @@
+json.partial! "product_discount_packages/product_discount_package", product_discount_package: @product_discount_package

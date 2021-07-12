@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @product_discount_package.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product_discount_package.description %>
+</p>
+
+<p>
+  <strong>Discount percentage:</strong>
+  <%= @product_discount_package.discount_percentage %>
+</p>
+
+<%= link_to 'Edit', edit_product_discount_package_path(@product_discount_package) %> |
+<%= link_to 'Back', product_discount_packages_path %>

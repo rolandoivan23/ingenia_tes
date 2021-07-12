@@ -1,0 +1,2 @@
+class ProductDiscountPackage < ApplicationRecord
+end
