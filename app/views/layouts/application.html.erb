@@ -24,19 +24,34 @@
 <body>
 
     <!-- breadcrumb start -->
-    <div class="breadcrumb-section" style="background: #ebecec; ">
+    <div class="breadcrumb-section" style="background: #ebecec; padding:0px; ">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
                     <div class="page-title">
-                        <h2>our collection</h2>
+                        <style>
+                            .menu-btn{
+                                margin: 0px 15px;
+                                border: 1px solid #ccc;
+                                padding: 10px;
+                            }
+                        </style>
+                        <a class="menu-btn" href="/">
+                            <h2>RC Home</h2>
+                        </a>
+                        <a class="menu-btn" href="/products">
+                            <h2>Products</h2>
+                        </a>
+                        <a class="menu-btn" href="/main/contact">
+                            <h2>Contact</h2>
+                        </a>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <nav aria-label="breadcrumb" class="theme-breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">collection</li>
+                            <li class="breadcrumb-item"><a href="/">RolasCloud</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><%= @breadcrum%></li>
                         </ol>
                     </nav>
                 </div>
