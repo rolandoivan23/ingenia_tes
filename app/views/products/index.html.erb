@@ -1,7 +1,11 @@
 
 <!--section start-->
 <section class="collection section-b-space ratio_square " style="background-image: url('<%= image_path 'products-background.png'  %>')">
+      <div class="btn btn-default" style="margin-top: -120px; ">
+        <a href="<%= new_product_path %>">New Product</a>
+      </div>
     <div class="container">
+
         <div class="row partition-collection">
           <% if @products.size > 0 %>
             <% @products.each do |product| %>
