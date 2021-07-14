@@ -27,8 +27,8 @@
     <div class="breadcrumb-section" style="background: #ebecec; padding:0px; ">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
-                    <img src="<%= image_path 'logo_test_ingenia.png'%>" alt="">
+                <div class="col-sm-3" >
+                    <img id="menu-rc-logo" src="<%= image_path 'logo_test_ingenia.png'%>" alt="">
                 </div>
                 <div class="col-sm-5">
                     <div class="page-title">
@@ -37,6 +37,11 @@
                                 margin: 0px 15px;
                                 border: 1px solid #ccc;
                                 padding: 10px;
+                            }
+
+                            #menu-rc-logo{
+                                max-width: 175px;
+                                max-height: 44px;
                             }
                         </style>
                         <%= link_to raw('<h2>RC Home</h2>'), root_path, class: 'menu-btn' %> |
